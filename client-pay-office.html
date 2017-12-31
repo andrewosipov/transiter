@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-textdirection="ltr" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-png" href="img/favicon.png">
+    <title>Транзитер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="white-back">
+
+    <header class="header ">
+        <div class="header__top header__top_no-shadow">
+            <div class="header__top-container container">
+                <div class="row">
+                    <div class="col-2 ">
+                        <div class="header__logo">
+                            <a href="index.html" class=""><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-10 ">
+                        <nav class="top-navbar navbar " role="navigation">
+                            <div class="top-navbar__mobile"><span></span></div>
+                            <ul class="top-navbar__menu nav nav-menu">
+                                <li class="top-navbar__li "><a href="#" class="top-navbar__a">Настройки профиля</a></li>
+                                <li class="top-navbar__li active"><a href="#" class="top-navbar__a">Иван Иванов</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom header__bottom_green">
+            <div class="header__bottom-container container">
+                <a href="index.html" class="header__back header__back_light"></a>
+                <div class="header__title">Оплата в офисе Транзитера</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-block container-fluid">
+        <div class="row ">
+            <div class="map-container col-lg-7">
+                <div id="map" class="map-container__map"></div>
+            </div>
+            <div class="map-form-container content-container col-lg-5">
+                <div class="content-block-container content-block_single content-inside-block-container">
+
+                    <div class="content__group content__group_title ">
+                        <div class="content__title content__title_p2">Сорханите id заказа чтобы оплатить в офисе</div>
+                        <div class="content__item  ">
+                            <div class="content__label ">id перевозки:</div>
+                            <div class="content__value ">777-544 0</div>
+                        </div>
+
+                    </div>
+
+                    <div class="content__group content__group_title mt-3 mb-3 ">
+                        <button  class="btn btn-submit btn-big">Отправить id на почту</button>
+                    </div>
+
+                    <div class="content__group content__group_title ">
+                        <div class="content__title content__title_p1">Адреса в вашем городе</div>
+                        <div class="content__item  content__value_small">Новосибирск, Ленина 54, тел 5454 445<br>
+                            8:00 - 19:00 (карта или наличные)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <script>
+        ymaps.ready(map_init);
+        var ya_map;
+
+        function map_init(){
+            ya_map = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 12,
+                controls: []
+            });
+
+
+
+            myPlacemark = new ymaps.Placemark([55.73307780918911,37.656425275390625], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/map-terminal.png',
+                iconImageSize: [53, 62]
+            });
+            ya_map.geoObjects.add(myPlacemark);
+
+
+
+        }
+    </script>
+
+    <div class="footer"></div>
+
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>

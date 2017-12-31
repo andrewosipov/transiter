@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-textdirection="ltr" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-png" href="img/favicon.png">
+    <title>Транзитер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="grey-back">
+
+    <header class="header ">
+        <div class="header__top ">
+            <div class="header__top-container container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header__logo">
+                            <a href="index.html" class=""><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="top-navbar navbar " role="navigation">
+                            <ul class="top-navbar__menu nav nav-menu">
+                                <li class="top-navbar__li active"><a href="#" class="top-navbar__a">Знакомство с сервисом</a></li>
+                                <li class="top-navbar__li"><a href="#" class="top-navbar__a">Стать перевозчиком</a></li>
+                                <li class="top-navbar__li"><a href="#" class="top-navbar__a">Для бизнеса</a></li>
+                                <li class="top-navbar__li"><a href="#" class="top-navbar__a">Отследить груз</a></li>
+                                <li class="top-navbar__li"><a href="#" class="top-navbar__a">Личный кабинет</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-block container-fluid">
+        <div class="row row__full-height map-row">
+
+            <div class="map-form-container content-container col-lg-5 flex-last">
+
+                <form action="#" method="post" class="form">
+                    <div class="content__title">Расчитайте стоимость отправки груза <br>попутным транспортом:</div>
+
+                    <div class="form__group form__group_border">
+                        <div class="form__field form__field__inline">
+                            <input type="radio" name="shipping" id="shipping-city" value="city" class="form__checkbox toggle__target" data-toggle-group="form__toggle_shipping" data-toggle-target="form__toggle_city" checked>
+                            <label for="shipping-city" class="form__label form__label_inline">Доставка по городу</label>
+                        </div>
+                        <div class="form__field form__field__inline ">
+                            <input type="radio" name="shipping" id="shipping-intercity" value="city" class="form__checkbox toggle__target" data-toggle-group="form__toggle_shipping" data-toggle-target="form__toggle_intercity">
+                            <label for="shipping-intercity" class="form__label form__label_inline">Доставка по межгороду</label>
+                        </div>
+                    </div>
+
+                    <!-- <toggle content> -->
+                    <!-- <по городу> -->
+                    <div class="toggle__content form__toggle_shipping form__toggle_city toggle__content_active">
+                       <div class="form__group ">
+                            <div class="form__field form__field__inline">
+                                <label for="sender-city" class="form__label form__label_note">Ваш город</label>
+                                <select name="sender-city" id="sender-city" class="form__order-input form__order-city ">
+                                    <option value="">Новосибирск</option>
+                                    <option value="">Сочи</option>
+                                    <option value="">Уфа</option>
+                                </select>
+                            </div>
+                            <div class="form__field form__field__inline form__order-terminal">
+                                <div class="form__label form__label_note">Адрес ближайшего терминала:</div>
+                                <div class="form__label ">Ул. Калинина 90, оф. 5</div>
+                            </div>
+                       </div>
+                        <div class="form__group form__inline-inputs form__order col-lg-9">
+                            <div class="form__field form__field_p1 form__point-a form__field_focused">
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required ">
+                                    <input type="text" name="sender-street" id="form-street-1" required value="" placeholder="" class="form__order-input form__order-address form-control">
+                                    <label for="form-street-1" class="form__label form__label_float form__label_order-float">Улица отправителя</label>
+                                </div>
+                                <div class="form__field form__field__inline form__input-required ">
+                                    <input type="text" name="sender-house" id="form-house-1" required value="" placeholder="" class="form__order-input form__order-house form-control ">
+                                    <label for="form-house-1" class="form__label form__label_float form__label_order-float">Номер</label>
+                                </div>
+                                <div class="clearfix pt-1"></div>
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="sender-time"  id="form-time-1" required value="" placeholder="" class="form__order-input form__order-time form-control ">
+                                    <label for="form-time-1" class="form__label form__label_float form__label_order-float">Время забора</label>
+                                </div>
+                                <div class="form__field form__field__inline form__input-required">
+                                    <input type="text" name="sender-time"  id="form-date-1" required value="" placeholder="" class="form__order-input form__order-date form-control ">
+                                    <label for="form-date-1" class="form__label form__label_float form__label_order-float">Дата забора</label>
+                                </div>
+                            </div>
+                            <div class="form__field form__field_p1 form__point-b">
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="recipient-street" id="form-street-2" required value="" placeholder="" class="form__order-input form__order-address form-control">
+                                    <label for="form-street-2" class="form__label form__label_float form__label_order-float">Улица получателя</label>
+                                </div>
+                                <div class="form__field form__field__inline form__input-required">
+                                    <input type="text" name="recipient-house" id="form-house-2" required  value="" placeholder="" class="form__order-input form__order-house form-control ">
+                                    <label for="form-house-2" class="form__label form__label_float form__label_order-float">Номер</label>
+                                </div>
+                            </div>
+                            <div class="form__field form__field_p1">
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="cargo-weight" id="form-weight-1" required  value="" placeholder="" class="form__order-input form__order-weight form-control">
+                                    <label for="form-weight-1" class="form__label form__label_float form__label_order-float">Вес груза<span class="form__label_just-focus">, кг</span></label>
+                                </div>
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="cargo-width" id="form-width-1" required value="" placeholder="" class="form__order-input form__order-width form-control">
+                                    <label for="form-width-1" class="form__label form__label_float form__label_order-float">Ширина<span class="form__label_just-focus">, см</span></label>
+                                </div>
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="cargo-length" id="form-length-1" required value="" placeholder="" class="form__order-input form__order-length form-control">
+                                    <label for="form-length-1" class="form__label form__label_float form__label_order-float">Длина<span class="form__label_just-focus">, см</span></label>
+                                </div>
+                                <div class="form__field form__field__inline form__field_no-padding-right form__input-required">
+                                    <input type="text" name="cargo-height" id="form-height-1" required value="" placeholder="" class="form__order-input form__order-height form-control">
+                                    <label for="form-height-1" class="form__label form__label_float form__label_order-float">Высота<span class="form__label_just-focus">, см</span></label>
+                                </div>
+                            </div>
+                            <div class="form__field ">
+                                <textarea name="cargo-descript" placeholder="Описание груза" class="form__order-textarea form__order-descript form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <по городу /> -->
+                    <!-- <по межгороду> -->
+                    <div class="toggle__content form__toggle_shipping form__toggle_intercity ">
+                        <div class="form__group ">
+
+                            <div class="form__field form__field__inline form__order-terminal">
+                                <div class="form__label form__label_note">Адрес ближайшего терминала:</div>
+                                <div class="form__label ">Ул. Калинина 90, оф. 5</div>
+                            </div>
+                        </div>
+                        <div class="form__group form__inline-inputs form__order col-lg-9">
+                            <div class="form__field form__field_p1 form__point-a form__field_focused">
+                                <input type="text" name="sender-city" value="" placeholder="Город отправителя" class="form__order-input form__order-intercity-city form-control">
+                                <input type="text" name="sender-street" value="" placeholder="Улица отправителя" class="form__order-input form__order-address form__order-intercity-address form-control">
+                                <input type="text" name="sender-house" value="" placeholder="Номер дома" class="form__order-input form__order-house form__order-intercity-house form-control ">
+                            </div>
+                            <div class="form__field form__field_p1 form__point-b">
+                                <input type="text" name="recipient-city" value="" placeholder="Город получателя" class="form__order-input form__order-intercity-city form-control">
+                                <input type="text" name="recipient-street" value="" placeholder="Улица получателя" class="form__order-input form__order-address form__order-intercity-address form-control">
+                                <input type="text" name="recipient-house" value="" placeholder="Номер" class="form__order-input form__order-house form__order-intercity-house form-control ">
+                            </div>
+                            <div class="form__field form__field_p1">
+                                <input type="text" name="sender-time" value="" placeholder="Время забора" class="form__order-input form__order-time form__order-intercity-time form-control ">
+                            </div>
+                            <div class="form__field form__field_p1">
+                                <input type="text" name="cargo-weight" value="" placeholder="Вес груза" class="form__order-input form__order-weight form-control">
+                                <input type="text" name="cargo-width" value="" placeholder="Ширина" class="form__order-input form__order-width form-control">
+                                <input type="text" name="cargo-length" value="" placeholder="Длина" class="form__order-input form__order-length form-control">
+                                <input type="text" name="cargo-height" value="" placeholder="Высота" class="form__order-input form__order-height form-control">
+                            </div>
+                            <div class="form__field ">
+                                <textarea name="cargo-descript" placeholder="Описание груза" class="form__order-textarea form__order-descript form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <по межгороду /> -->
+                    <!-- <toggle content /> -->
+
+                    <div class="content__title content__title_inner">Стоимость доставки</div>
+                    <div class="form__group ">
+                        <div class="form__field form__field__inline ">
+                            <input type="radio" name="shipping-cost" id="shipping-picking-up" value="city" class="form__checkbox" checked>
+                            <label for="shipping-picking-up" class="form__label form__label_inline form__label_inline-top">с забором груза <br>– 550 рублей</label>
+                        </div>
+                        <div class="form__field form__field__inline">
+                            <input type="radio" name="shipping-cost" id="shipping-self-picking" value="city" class="form__checkbox" >
+                            <label for="shipping-self-picking" class="form__label form__label_inline form__label_inline-top">доставки через терминал <br>– 350 рублей <span class="form__label_note">вы лично сдаете груз в терминал</span></label>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <input type="submit" value="Отправить груз" class="btn btn-submit">
+                    </div>
+                </form>
+            </div>
+            <div class="map-container col-lg-7 flex-first">
+                <div id="map" class="map-container__map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGgyiubA-y6zqphgnRsr6vfEOY8ZmF6ww&callback=initMap"></script>
+
+    <script>
+        function initMap() {
+            var center = {lat: 55.76, lng: 37.64};
+            var map = new google.maps.Map(document.getElementById('map'), { zoom: 12, center: center });
+
+            var markerA = new google.maps.Marker({
+                position: {lat: 55.76, lng: 37.64},
+                icon: 'img/icons/map-point-a.png',
+                map: map
+            });
+
+            var markerB = new google.maps.Marker({
+                position: {lat: 55.732496643155756, lng: 37.58982066113282},
+                icon: 'img/icons/map-point-b.png',
+                map: map
+            });
+
+            var markerTerminal = new google.maps.Marker({
+                position: {lat: 55.73307780918911, lng: 37.656425275390625},
+                icon: 'img/icons/map-terminal.png',
+                map: map
+            });
+
+            var markerCalc = new google.maps.Marker({
+                position: {lat: 55.77818849907833, lng: 37.56613139111329},
+                icon: 'img/icons/map-calc.png',
+                map: map
+            });
+
+        }
+
+    </script>
+
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
