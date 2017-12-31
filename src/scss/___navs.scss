@@ -1,0 +1,175 @@
+/* <top-navbar> */
+.top-navbar{
+  flex-direction: row-reverse;
+  padding: 15px 0 15px 0;
+}
+
+.top-navbar__li{
+  margin: 0 0 0 25px;
+  display: inline-block;
+}
+
+.top-navbar__a{
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.top-navbar__a:hover{
+  color: $red;
+}
+
+.top-navbar__li.active .top-navbar__a{
+  color: $red;
+}
+
+.top-navbar__menu{
+  float: right;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+/* <top-navbar /> */
+
+
+/* <sub-top-navbar> */
+.sub-top-navbar{
+  padding: 5px 0 5px 0;
+  float: left;
+}
+
+.sub-top-navbar__li{
+  margin: 0 25px 0 0px;
+}
+
+.sub-top-navbar__li_with-count{
+  margin-right: 45px;
+}
+
+.sub-top-navbar__a{
+  font-size: 18px;
+  font-weight: bolder;
+  display: block;
+  color: $sub-top-menu-grey;
+  padding-bottom: 17px;
+  border-bottom: 6px solid transparent;
+  position: relative;
+}
+
+.sub-top-navbar__a:hover, .sub-top-navbar__li.active .sub-top-navbar__a{
+  color: $white;
+  border-color: $green;
+}
+
+.sub-top-navbar__count{
+  display: block;
+  width: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  background: $green;
+  color: $header-black;
+  border-radius: 50%;
+  vertical-align: top;
+  position: absolute;
+  right: -30px;
+  top: -10px;
+}
+
+/* <top-navbar /> */
+
+
+@media ( max-width: 768px ) {
+
+
+
+  .top-navbar__menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top:60px;
+    background: $white;
+    z-index: 100;
+    text-align: center;
+  }
+
+  .top-navbar__li{
+    display: block;
+    padding-left: 0px;
+  }
+
+  .top-navbar__a{
+    display: block;
+    padding: 10px 0 10px 0;
+  }
+
+  .top-navbar__li:last-child .top-navbar__a{
+    padding-bottom: 20px;
+  }
+
+  .top-navbar__mobile{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 29px;
+
+  }
+
+  .top-navbar__mobile span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: $red;
+  }
+
+  .top-navbar__mobile span:before{
+    content: "";
+    display: block;
+    height: 2px;
+    background: $red;
+    top: 8px;
+    position: relative;
+  }
+
+  .top-navbar__mobile span:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background: $red;
+    bottom: -15px;
+    position: relative;
+  }
+
+}
+
+@media ( min-width: 992px ) {
+
+
+
+}
+
+@media ( max-width: 991px ) {
+
+  .top-navbar__menu{
+    width: 720px;
+  }
+
+}
+
+@media ( max-width: 767px ) {
+
+  .top-navbar__menu{
+    width: 540px;
+  }
+
+}
+
+@media ( max-width: 575px ) {
+
+  .top-navbar__menu{
+    width: calc(100vw - 30px);
+
+  }
+
+}

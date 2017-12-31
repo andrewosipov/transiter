@@ -1,0 +1,54 @@
+body{ font-family:'Open Sans',  Arial, Tahoma; font-weight: 400; font-size:15px; background:$body-grey url(../img/logo-back.png) 98% 98% no-repeat; color:#333333; }
+
+*:focus{
+  outline: none;
+}
+
+.grey-back{
+  background: $content-grey;
+}
+
+.white-back{
+  background: $content-white;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+a{
+  color:#333;
+}
+
+a:hover{
+  text-decoration: none;
+  color: $green;
+}
+
+h1{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+
+
+.light-text{
+  font-weight: 300;
+  color: #a7a7a7;
+}
+
+.wrapper{
+  min-height: 100%;
+  padding: 0 0 35px 0;
+}
+
+
+.back-img{
+  background-size: cover;
+  background-position: 0px 0px;
+}

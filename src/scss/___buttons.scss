@@ -1,0 +1,205 @@
+/* <btn> */
+.btn{
+  padding: 15px 65px 15px 25px;
+  border-radius: 50px;
+  background: $green url(../img/icons/button-arrow.png) 100% 0px no-repeat;
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:active, .btn:focus{
+  outline: none;
+  box-shadow: none;
+  color:#fff;
+  background: $green url(../img/icons/button-arrow.png) 100% 0px no-repeat;
+}
+
+.btn:hover{
+  box-shadow: $hover-box-shadow;
+  color: $white;
+}
+
+/* <btn /> */
+
+/* <btn-grey> */
+.btn-grey, .btn-grey:focus, .btn-grey:active{
+  padding: 13px 20px 13px 20px;
+  border-radius: 50px;
+  border:none;
+  background: $grey;
+  color: $black;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-grey:hover{
+  box-shadow: $hover-box-shadow;
+  color: $black;
+}
+
+/* <btn-grey /> */
+
+
+/* <btn-download> */
+
+.btn__download, , .btn__download:focus, .btn__download:active{
+  padding: 10px 50px 9px 20px;
+  background: $grey url(../img/icons/download.png) 100% 0px no-repeat !important;
+}
+
+.btn__download_ok{
+  padding: 9px 50px 9px 20px;
+  border: 2px solid $green;
+  background: $white url(../img/icons/uploaded.png) 100% -1px no-repeat !important;
+}
+
+.btn__download_note{
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.btn__download_delete{
+  border: none;
+  color: $red;
+  background: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.btn__download_delete:hover{
+  text-decoration: underline;
+}
+
+/* <btn-download /> */
+
+.btn-middle{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+
+/* <btn__*> */
+
+.btn-big{
+  padding: 20px 85px 20px 45px;
+  background: $green url(../img/icons/button-arrow-2.png) 100% 0px no-repeat;
+}
+
+.btn__no-radius, .btn__no-radius:focus, .btn__no-radius:active{
+  border-radius: 0px !important;
+}
+
+.btn-margin{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn__float-right{
+  float: right;
+}
+
+.btn__link{
+  color: $note-grey;
+  font-weight: bold;
+  font-size: 16px;
+}
+.btn__link_decline{
+  display: inline-block;
+  margin: 0 0 0 30px;
+  color: $black;
+}
+
+.btn__link_pl3{
+  padding-left: 30px;
+}
+
+.btn__link_ml3{
+  margin-left: 30px;
+}
+
+.btn__line{
+  display: inline-block;
+}
+
+.btn__no-arrow{
+  padding: 15px 25px 15px 25px;
+  border-radius: 50px;
+  background: $green;
+  color: $white !important;
+}
+
+/* <btn__* /> */
+
+
+/* <btn-group> */
+
+.button-group{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.button-group__item{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 20px 10px;
+  width: 180px;
+  height: 63px;
+  border-radius: 5px !important;
+}
+
+/* <btn-group /> */
+
+
+@media ( min-width: 992px ) {
+
+
+}
+
+@media ( min-width: 768px ) {
+
+
+
+}
+
+@media ( max-width: 576px ) {
+
+  .btn{
+    word-break: break-all;
+  }
+
+  .btn__line{
+    display: block;
+  }
+
+}
+
+
+@media ( max-width: 991px ) {
+
+  .btn-big{
+    padding: 15px 65px 15px 25px;
+    border-radius: 50px;
+    background: $green url(../img/icons/button-arrow.png) 100% 0px no-repeat;
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn{
+    font-size: 14px;
+  }
+
+}

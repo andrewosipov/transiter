@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-textdirection="ltr" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-png" href="img/favicon.png">
+    <title>Транзитер</title>
+    //= ___viewport.html
+    //= ___css.html
+</head>
+<body class="" >
+
+    <header class="header ">
+        <div class="header__top header__top_black">
+            <div class="header__top-container container">
+                <a href="index.html" class="header__back "></a>
+                <div class="header__title">Регистрация </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-block  container">
+        <div class="row ">
+            <div class="content-block_single col-lg-9 ">
+                <div class="content-block-container content-container ">
+                    <div class="content__group content__group_title">
+                        <div class="content__title ">Выберите убодный вариант отплаты вашей работы</div>
+                    </div>
+                    <form action="" method="post" class="">
+
+                        <div class="form__group form__group_border-1">
+                            <div class="form__field form__field__inline">
+                                <input type="radio" name="shipping" id="shipping-city" value="city" class="form__checkbox toggle__target" data-toggle-group="form__toggle_shipping" data-toggle-target="form__toggle_city" checked>
+                                <label for="shipping-city" class="form__label form__label_inline">Получать деньги на карту</label>
+                            </div>
+                            <div class="form__field form__field__inline ">
+                                <input type="radio" name="shipping" id="shipping-intercity" value="city" class="form__checkbox toggle__target" data-toggle-group="form__toggle_shipping" data-toggle-target="form__toggle_intercity">
+                                <label for="shipping-intercity" class="form__label form__label_inline">Получать деньги на телефон</label>
+                            </div>
+                        </div>
+
+                        <!-- <toggle content> -->
+                        <!-- <на карту> -->
+                        <div class="toggle__content form__toggle_shipping form__toggle_city toggle__content_active">
+
+                            <div class="form__group form__group_mb1">
+                                <div class="form__field_title">Привяжите корпоративную карту</div>
+                            </div>
+
+                            <div class="form__card form__card_inline">
+                                <div class="form__field form__field__inline ">
+                                    <input type="text" name="card" value="" placeholder="" required id="form-card-num-1" class="form__order-input form__order-card-input form__order_card-number form__order-input-border form-control ">
+                                    <label for="form-card-num-1" class="form__label form__label_float form__label_order-float">***</label>
+                                </div>
+                                <div class="form__field form__field__inline ">
+                                    <input type="text" name="card" value="" placeholder="" required id="form-card-num-2" class="form__order-input form__order-card-input form__order_card-number form__order-input-border form-control ">
+                                    <label for="form-card-num-2" class="form__label form__label_float form__label_order-float">***</label>
+                                </div>
+                                <div class="form__field form__field__inline ">
+                                    <input type="text" name="card" value="" placeholder="" required id="form-card-num-3" class="form__order-input form__order-card-input form__order_card-number form__order-input-border form-control ">
+                                    <label for="form-card-num-3" class="form__label form__label_float form__label_order-float">***</label>
+                                </div>
+                                <div class="form__field form__field__inline ">
+                                    <input type="text" name="card" value="" placeholder="" required id="form-card-num-4" class="form__order-input form__order-card-input form__order_card-number form__order-input-border form-control ">
+                                    <label for="form-card-num-4" class="form__label form__label_float form__label_order-float">***</label>
+                                </div>
+                                <div class="form__field form__order">
+                                    <input type="text" name="code" value="" required id="form-cardholder" placeholder="" class="form__order-input form__order-card-input form__order_card-holder form__order-input-border form-control ">
+                                    <label for="form-cardholder" class="form__label form__label_float form__label_order-float">Имя держателя карты</label>
+                                </div>
+                                <div class="form__field form__field__inline">
+                                    <input type="text" name="code" value="" placeholder="" id="form-card-date" required class="form__order-input form__order-card-input form__order_card-date form__order-input-border form-control ">
+                                    <label for="form-card-date" class="form__label form__label_float form__label_order-float">ММ/ГГ</label>
+                                </div>
+                                <div class="form__field form__field__inline">
+                                    <input type="text" name="code" value="" placeholder="" required id="form-card-cvc" class="form__order-input form__order-card-input form__order_card-cvc form__order-input-border form-control ">
+                                    <label for="form-card-cvc" class="form__label form__label_float form__label_order-float">CVC</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <на карту /> -->
+                        <!-- <на телефон> -->
+                        <div class="toggle__content form__toggle_shipping form__toggle_intercity ">
+
+                            <div class="form__group form__group_mb1">
+                                <div class="form__field_title">Введите номер телефона</div>
+                            </div>
+
+                            <div class="form__group form__group_mb1">
+                                <div class="form__field form__field__inline">
+                                    <input type="text" name="name" id="form-phone-1" value="" placeholder="" required class="form__order-input form__order-input_big-2 form__order-input-shadow form-control">
+                                    <label for="form-phone-1" class="form__label form__label_float">Номер телефона</label>
+                                </div>
+                                <div class="form__field form__field__inline pt-3">
+                                    <a href="" class="form__order_link ">Получить код</a>
+                                </div>
+                                <div class="form__field ">
+                                    <input type="text" name="name" id="form-phone-code" value="" placeholder="" required class="form__order-input form__order-input_big-2 form__order-input-shadow form-control">
+                                    <label for="form-phone-code" class="form__label form__label_float">Проверочный код</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <на телефон /> -->
+
+                        <div class="form__field form__field_mt2">
+                            <input type="submit" value="Начать работу" class="btn">
+                        </div>
+
+                        <div class="form__field form__field_mt2 ">
+                            <input type="checkbox" name="shipping" id="policy" value="city" class="form__checkbox ">
+                            <label for="policy" class="form__label form__label_inline">Я согласен на обработку данных</label>
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+
+    //= ___js.html
+</body>
+</html>
